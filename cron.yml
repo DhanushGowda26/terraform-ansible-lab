@@ -12,6 +12,9 @@
         name: cleanup task
         minute: "0/30"
         hour: "20"
+      # day:1-31
+      # month:1-12
+      # weekday:0-7
         job: /home/dhanush/cleanup.sh
         user: dhanush
 
