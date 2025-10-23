@@ -1,1 +1,26 @@
 git.sh
+# Terraform directories
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars       # ignore real .tfvars with secrets
+
+# Environment files with secrets
+envs/*.tfvars  # ignore actual env files
+!envs/*.tfvars.example  # allow example placeholders
+
+# Crash logs
+crash.log
+
+# Sensitive files
+.env
+*.pem
+*.key
+
+# OS / Editor files
+*.swp
+*.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
