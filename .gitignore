@@ -1,13 +1,15 @@
 git.sh
 # Terraform directories
-.terraform/
-*.tfstate
-*.tfstate.backup
-*.tfvars       # ignore real .tfvars with secrets
+# Terraform directories and state
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/*.tfvars       # real variable files
+terraform/terraform.tfstate.d/
 
-# Environment files with secrets
-envs/*.tfvars  # ignore actual env files
-!envs/*.tfvars.example  # allow example placeholders
+# Environment files
+terraform/envs/*.tfvars  # ignore actual env files
+terraform/!envs/*.tfvars.example  # allow example placeholders
 
 # Crash logs
 crash.log
