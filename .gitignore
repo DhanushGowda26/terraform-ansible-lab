@@ -6,7 +6,7 @@ terraform/*.tfstate
 terraform/*.tfstate.backup
 terraform/*.tfvars       # real variable files
 terraform/terraform.tfstate.d/
-
+terraform/.terraform.lock.hcl
 # Environment files
 terraform/envs/*.tfvars  # ignore actual env files
 terraform/!envs/*.tfvars.example  # allow example placeholders
