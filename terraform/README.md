@@ -119,6 +119,7 @@ Outputs allow you to **export information** from a module:
 
 > Conceptually, the pattern is:  
 > `Module defines what it needs` → `Root provides environment-specific values` → `Terraform deploys resources in AWS`.
+> `Root module is the entry point.` → `Root defines what values to pass to the child module.` → `The child module expects variables.`.
 
 ---
 
@@ -128,3 +129,4 @@ This guide forms the foundation for **hands-on Terraform practice** with AWS. Th
 
 **Author:** Dhanush Gowda  
 **Date:** October 2025
+
