@@ -1,0 +1,17 @@
+- hosts: target
+  tasks:
+    - name: cronjob1
+      cron:
+        name: db backup task
+        minute: "0/30"
+        hour: "22"
+        job: /home/dhanush/db.sh
+        user: dhanush
+    - name: cronjob2
+      cron:
+        name: cleanup task
+        minute: "0/30"
+        hour: "20"
+        job: /home/dhanush/cleanup.sh
+        user: dhanush
+
