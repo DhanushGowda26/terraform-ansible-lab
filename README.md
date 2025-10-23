@@ -1,1 +1,1 @@
-Explore hands-on exercises to master configuration management, orchestration, and playbooks in an interactive Ansible playground.
+Explore hands-on exercises to master IaC(terraform) and configuration management(ansible) in an interactive playground.
