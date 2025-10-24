@@ -8,7 +8,7 @@ terraform/*.tfvars       # real variable files
 terraform/terraform.tfstate.d/
 terraform/.terraform.lock.hcl
 # Environment files
-terraform/envs/*.tfvars  # ignore actual env files
+terraform/envs/*  
 
 # Crash logs
 crash.log
