@@ -43,12 +43,12 @@ module "internet_gateway" {
 }
 
 module "public_route_table" {
-  source     = "./modules/routetable"
-  vpc_id     = module.vpc.vpc_id
-  vpc_name   = var.vpc_name
-  igw_id     = module.internet_gateway.igw_id
+  source           = "./modules/routetable"
+  vpc_id           = module.vpc.vpc_id
+  vpc_name         = var.vpc_name
+  igw_id           = module.internet_gateway.igw_id
   public_subnet_id = module.public_subnet.subnet_id
-  tags       = var.tags
+  tags             = var.tags
 }
 
 
