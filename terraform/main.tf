@@ -52,3 +52,24 @@ module "public_route_table" {
 }
 
 
+module "ssh_security_group" {
+  source = "./modules/sg"
+
+  vpc_id =  module.vpc.vpc_id
+  tags   = var.tags
+}
+
+# Call the EC2 module
+# module "ec2_instance" {
+#   source      = "./modules/ec2"
+#   ami_id      = var.ami_id
+#   instance_type = var.instance_type
+#   subnet_id   = module.public_subnet.subnet_id
+#   key_name    = var.key_name
+#   associate_public_ip = var.associate_public_ip
+#   instance_name = var.instance_name
+#   vpc_security_group_ids = [module.ssh_security_group.ssh_security_group_id]  
+#   tags        = var.tags
+# }
+
+
