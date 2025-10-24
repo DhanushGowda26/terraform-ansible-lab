@@ -9,7 +9,7 @@ terraform/terraform.tfstate.d/
 terraform/.terraform.lock.hcl
 # Environment files
 terraform/envs/*.tfvars  # ignore actual env files
-terraform/!envs/*.tfvars.example  # allow example placeholders
+!terraform/envs/*.tfvars.example  # allow example placeholders
 
 # Crash logs
 crash.log
